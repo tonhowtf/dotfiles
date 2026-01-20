@@ -1,12 +1,28 @@
 {
+  // Elixir
+  "elixirLS.suggestSpecs": false,
+  "elixirLS.dialyzerEnabled": true,
+  "elixirLS.signatureAfterComplete": false,
+  "elixirLS.fetchDeps": false,
+  "files.associations": {
+    "*.heex": "phoenix-heex"
+  },
+  "[elixir]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "JakeBecker.elixir-ls"
+  },
+  "[phoenix-heex]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "JakeBecker.elixir-ls"
+  },
   // WorkBench
-  "workbench.iconTheme": "helium-icon-theme",
-  "workbench.colorTheme": "NyxVamp - Obsidian",
+  "workbench.iconTheme": "symbols",
+  "workbench.colorTheme": "Dracula Pro",
   "workbench.editor.labelFormat": "short",
   "workbench.startupEditor": "newUntitledFile",
   // editor settings
   "editor.wordWrap": "on",
-  "editor.fontSize": 20,
+  "editor.fontSize": 16,
   "editor.lineHeight": 20,
   "terminal.integrated.fontSize": 12,
   "editor.tabSize": 4,
@@ -21,7 +37,7 @@
   "editor.semanticHighlighting.enabled": true,
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit"
+    "source.fixAll.eslint": "explicit"
   },
   // VSCode stuff
   "breadcrumbs.enabled": true,
@@ -35,8 +51,11 @@
     "javascript": "jsx"
   },
   "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
+    "javascript": "javascriptreact",
+    "elixir": "html",
+    "phoenix-heex": "html"
   },
+  "emmet.triggerExpansionOnTab": true,
   // Extensions
   "extensions.ignoreRecommendations": true,
   "diffEditor.ignoreTrimWhitespace": false,
@@ -64,12 +83,17 @@
   "polacode.transparentBackground": true,
   "polacode.shadow": "none",
   "github.copilot.enable": {
-    "*": false,
+    "*": true,
     "plaintext": false,
     "markdown": false,
     "scminput": false,
-    "yaml": false,
-    "javascript": false
+    "typescript": false,
+    "rust": false,
+    "javascript": false,
+    "go": false,
+    "dockercompose": false,
+    "ruby": false,
+    "typescriptreact": false
   },
   "gitlens.defaultDateFormat": null,
   "gitlens.hovers.currentLine.over": "line",
@@ -84,7 +108,7 @@
   "breadcrumbs.filePath": "off",
   "outline.icons": false,
   "liveServer.settings.donotVerifyTags": true,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "html.format.wrapAttributes": "auto",
   "html.format.wrapLineLength": 0,
   "html.autoClosingTags": true,
@@ -114,7 +138,25 @@
     "*.s3db": "${capture}.${extname}-*"
   },
   "workbench.editor.empty.hint": "hidden",
-  "python.createEnvironment.trigger": "off",
   "code-runner.runInTerminal": true,
+  "mdb.mcp.server": "prompt",
   //"python.analysis.typeCheckingMode": "basic"
+  // Discord
+  "discord.removeLowerDetails": true,
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "wakatime.apiKey": "Calmalámeupatrão",
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "editor.defaultFormatter": "biomejs.biome",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Git Bash": {
+      "source": "Git Bash",
+      "icon": "terminal-git-bash"
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
 }
